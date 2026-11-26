@@ -1,0 +1,12 @@
+{
+  "name": "gnome-net-widget",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GNOME Shell desktop widget: internet status, speed, usage and 5G/4G signal.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "for f in src/*.js dev/*/*.js tests/*.mjs; do node --check --input-type=module < \"$f\" || exit 1; done"
+  },
+  "license": "MIT"
+}

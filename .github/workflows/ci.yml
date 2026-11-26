@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Syntax check (ES modules)
+        run: npm run check
+      - name: Unit tests
+        run: npm test
+      - name: metadata.json is valid
+        run: node -e "const m=require('./src/metadata.json'); if(!m.uuid||!m['shell-version'].length) process.exit(1); console.log(m.uuid, m['shell-version'])"
+      - name: Pack extension zip
+        run: bash scripts/pack.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: net-widget-extension
+          path: dist/*.zip

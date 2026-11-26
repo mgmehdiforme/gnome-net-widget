@@ -1,0 +1,9 @@
+{
+  "uuid": "net-widget@mgmehdiforme.github.io",
+  "name": "Net Widget",
+  "description": "A desktop widget for your internet connection: Good / Normal / Bad status from live ping, download and upload speed, today's usage, send/receive activity lights and, on 4G/5G routers, the network type (5G / 4G+ / 4G) with signal bars. Five layouts, readable from across the room. Drag to move, right-click to switch layout.",
+  "shell-version": ["49", "50"],
+  "url": "https://github.com/mgmehdiforme/gnome-net-widget",
+  "version": 1,
+  "version-name": "1.0.0"
+}

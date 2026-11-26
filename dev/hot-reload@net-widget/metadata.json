@@ -1,0 +1,7 @@
+{
+  "uuid": "hot-reload@net-widget",
+  "name": "Net Widget (hot-reload dev loader)",
+  "description": "Development only: loads widget-<N>.js from this folder and hot-swaps it when a newer file appears, so you can iterate on Wayland without logging out. Touch ~/.cache/hot-reload/snap-request to save a screenshot of the bottom-right corner.",
+  "shell-version": ["49", "50"],
+  "version": 1
+}
