@@ -197,7 +197,7 @@ Issues and PRs are welcome: new router parsers, layouts, translations, a prefere
 
 ## 🎬 Video
 
-<!-- VIDEO -->Video walkthrough: coming soon on [YouTube @MehdiGolzari-AI-Dev](https://www.youtube.com/@MehdiGolzari-AI-Dev).
+🎬 **Video walkthrough:** https://www.youtube.com/watch?v=ae6hgCDfxx8
 
 ---
 
